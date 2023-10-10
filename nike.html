@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Clone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+</head>
+<style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    nav{
+      color: Black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      text-align: center;
+    }
+    nav span{
+      background: none;
+      color:black;
+      border: none;
+      
+      /* font: inherit; */
+      cursor: pointer;
+      /* outline: inherit; */
+      
+      text-align: center;
+      
+    }
+
+
+    
+   .btn 
+   {
+      background: none;
+      color:black;
+      border: none;
+      padding: 0;
+      /* font: inherit; */
+      cursor: pointer;
+      outline: inherit;
+      text-align: center;
+      display: flex;
+      
+    }
+    /* .img{ */
+      /* height: 500px; */
+      /* width: 900px; */
+      /* padding: 10px 10px 10px 10px; */
+      /* margin: 10px 10px 10px 130px; */
+      /* padding: 10px 10px 10px 10px; */
+    /* } */
+
+    .fade-in-image {
+animation: fadeIn 5s;
+-webkit-animation: fadeIn 5s;
+-moz-animation: fadeIn 5s;
+-o-animation: fadeIn 5s;
+-ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+input.search {
+  width: 240px;
+  border: 1px solid #555;
+  border-radius: 30px;
+  display: block;
+  padding: 4px 0px 1px 145px;
+  background: transparent url(/assets/search.svg) no-repeat 13px;
+}
+
+
+ </style>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm"  style="padding-block: inherit;
+        background: #8080801c;">
+            <a href="#" class="navbar-brand"> <img src="jorden.jpg" alt="Image" style="width: 40px;"></a>
+            <ul class="navbar-nav" style=" padding: 0px 10px 0px 800px;">
+                <li class="nav-item">
+                 <a class="nav-link" href="#">
+                    <span>Find a Store</span>
+                    <span>|</span>
+                 </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Help</span>
+                    <span>|</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>Join Us</span>
+                        <span>|</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nikeloginform.html">
+                        <span>Sign in</span>
+                    </a>
+                </li>`
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-sm" style="border-bottom: 5px solid #8080801c;">
+            <a href="#" class="navbar-brand"> <img src="nike-logo-png-black-icon-white-background-large.png" alt="Image" style="width: 40px;"></a>
+            <ul class="navbar-nav" style=" padding: 0px 10px 0px 347px;>
+                <li class="nav-item">
+                 <a class="nav-link" href="#">
+                    <button class="btn">New & Featured</button>
+                    
+                 </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn">Men</button>
+                    
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button class="btn">Women</button>
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button class="btn">Kids</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button class="btn">sale</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button class="btn">SNKRS</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <input class="search" type="search" placeholder="Search...">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="wrapper">
+                            <i class="fa fa-heart-o" style="font-size:27px; color: black;"></i>
+                          </div> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <div class="wrapper">
+                            <i class="fa fa-shopping-cart" style="font-size:27px; color: black;"></i>
+                          </div> 
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+       </header>
+
+    <div class="container">
+        <h1>Nike Products</h1>
+        <div class="row" id="product-list">
+            <!-- Product items will be added here using JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Sample product data
+        const products = [
+            { name: 'Nike Air Max', price: 149.99, image: 'image99.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image7.jpg' },
+            { name: 'Nike React', price: 129.99, image: 'image98.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image99.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image97.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image96.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image95.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image93.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image94.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image92.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image91.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image90.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image99.jpeg' },
+            { name: 'Nike React', price: 129.99, image: 'image6.jpg' },
+            { name: 'Nike React', price: 129.99, image: 'image7.jpg' },
+            // Add more products here
+        ];
+
+        const cart = [];
+
+        // Function to display products on the page
+        function displayProducts() {
+            const productList = document.getElementById('product-list');
+
+            products.forEach((product, index) => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('col-md-4', 'mb-4');
+
+                productCard.innerHTML = `
+                    <div class="card">
+                        <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="card-text">$${product.price.toFixed(2)}</p>
+                            <button class="btn btn-primary" onclick="addToCart(${index})">Add to Cart</button>
+                        </div>
+                    </div>
+                `;
+
+                productList.appendChild(productCard);
+            });
+        }
+
+        function addToCart(index) {
+            const product = products[index];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        displayProducts();
+    </script>
+</body>
+</html>

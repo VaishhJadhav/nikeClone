@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    
+  </script>
+    
+   <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      nav{
+        color: Black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        text-align: center;
+      }
+      nav span{
+        background: none;
+        color:black;
+        border: none;
+        
+        /* font: inherit; */
+        cursor: pointer;
+        /* outline: inherit; */
+        
+        text-align: center;
+        
+      }
+
+
+      
+     .btn 
+     {
+        background: none;
+        color:black;
+        border: none;
+        padding: 0;
+        /* font: inherit; */
+        cursor: pointer;
+        outline: inherit;
+        text-align: center;
+        display: flex;
+        
+      }
+      /* .img{ */
+        /* height: 500px; */
+        /* width: 900px; */
+        /* padding: 10px 10px 10px 10px; */
+        /* margin: 10px 10px 10px 130px; */
+        /* padding: 10px 10px 10px 10px; */
+      /* } */
+
+      .fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+input.search {
+    width: 240px;
+    border: 1px solid #555;
+    border-radius: 30px;
+    display: block;
+    padding: 4px 0px 1px 145px;
+    background: transparent url(/assets/search.svg) no-repeat 13px;
+}
+
+
+/* @keyframes wishlist-ani {
+    0%   {transform: scale(1);}
+    25%  {transform: scale(.5);}
+    50%  {transform: scale(1.2);}
+    100% {transform: scale(1);}
+} */
+
+      .button1{
+             color: aliceblue;
+             border-radius: 50%;
+      }
+      .container
+      {
+        padding: 10px 20px 20px 10px;
+            display: flex;
+            justify-content: space-between;
+      }
+    /* .container1
+    {
+        padding: 50px 100px 20px 10px;
+    } */
+    .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-left1
+{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-left2
+{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.container
+      {
+        padding: 10px 20px 20px 10px;
+            display: flex;
+            justify-content: space-around;
+      }
+      .secondflex
+      {
+        justify-content: right;
+        display: flex;
+        padding: 10px 20px 20px 30px;
+      }
+      .thirdflex
+      {
+        display: flex;
+      }
+      /* .button
+      {
+        padding: 8px 27px 9px 26px;
+    border-radius: 45%;
+    color: white;
+    background: black
+      } */
+   </style>
+</head>
+<script>
+    $('.icon-wishlist').on('click', function(){
+  $(this).toggleClass('in-wishlist');
+});
+</script>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-sm"  style="padding-block: inherit;
+    background: #8080801c;">
+        <a href="#" class="navbar-brand"> <img src="jorden.jpg" alt="Image" style="width: 40px;"></a>
+        <ul class="navbar-nav" style=" padding: 0px 10px 0px 800px;">
+            <li class="nav-item">
+             <a class="nav-link" href="#">
+                <span>Find a Store</span>
+                <span>|</span>
+             </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>Help</span>
+                <span>|</span>
+            </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>Join Us</span>
+                    <span>|</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nikeloginform.html">
+                    <span>Sign in</span>
+                </a>
+            </li>`
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand-sm" style="border-bottom: 5px solid #8080801c;">
+        <a href="#" class="navbar-brand"> <img src="nike-logo-png-black-icon-white-background-large.png" alt="Image" style="width: 40px;"></a>
+        <ul class="navbar-nav" style=" padding: 0px 10px 0px 347px;>
+            <li class="nav-item">
+             <a class="nav-link" href="#">
+                <button class="btn">New & Featured</button>
+                
+             </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+                <button class="btn">Men</button>
+                
+            </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn">Women</button>
+                    
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn">Kids</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn">sale</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <button class="btn">SNKRS</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <input class="search" type="search" placeholder="Search...">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <div class="wrapper">
+                        <i class="fa fa-heart-o" style="font-size:27px; color: black;"></i>
+                      </div> 
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                    <div class="wrapper">
+                        <i class="fa fa-shopping-cart" style="font-size:27px; color: black;"></i>
+                      </div> 
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+   </header>
+    
+    <main>
+        <!-- <div class="img">
+            <img src="img1.png" alt="nike">
+        </div> -->
+        <div class="fade-in-image" style="height: 500px;
+        width: 900px; margin: 10px 10px 10px 130px;">
+            <img src="img1.png">
+         </div>
+        <div style="text-align: center; ">
+            <div style="font-size: 200%;"> 
+                <b><p>Nike InfinityRN4</p></b>
+            </div>
+           
+            <div style=" font-size:xxx-large; font-family: fantasy;">
+                <b>YOUR SUPPORT SYSTEM</b>
+            </div>
+            <div style="font-size: 150%;">
+                <p>All-new ReactX Foam, stretchy flynit and a wider midsole offer a system of support that moves you smoothly through every stride</p>
+                
+            </div>
+            <br><br>
+            <div >
+               <button type="button"   style="  padding: 8px 27px 9px 26px;
+               border-radius: 30px;
+               background: black;
+               "><a href="nike.html" style="
+               color: white;" >Shop</a></button>
+            </div>
+    
+        </div>
+        <div style="font-size: 22px; padding-left: 5%; margin-top: 100px; margin-bottom: 20px;">
+            <b>Just In</b>
+        </div>
+        <div class="container">
+            <div class="card" style="width: 400px;">
+                <img class="card-img-top" src="image2.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <!-- <h4 class="card-title">Vaishnavi Jadhav</h4> -->
+                    <p class="card-text">Available on the Nike App from: 28 Sep</p>
+                    <p class="card-text">LeBron XXI</p>
+                    <!-- <a href="#" class="btn btn-info">See Profile</a> -->
+                    <button type="button"  style="  padding: 8px 27px 9px 26px;
+                    border-radius: 30px;
+                    color: white;
+                    background: black"><a href="nike.html" style="
+               color: white;" >Get It First</a></button>
+                </div>
+            </div>
+            <div class="container1">
+            <div class="card" style="width: 400px; ">
+                <img class="card-img-top" src="image1.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <!-- <h4 class="card-title">Vaishnavi Jadhav</h4> -->
+                    <p class="card-text">Available on the Nike App from: 27 Sep</p>
+                    <p class="card-text">Nike Calm Mule</p>
+                    <!-- <a href="#" class="btn btn-info">See Profile</a> -->
+                    <button type="button"  style="  padding: 8px 27px 9px 26px;
+                    border-radius: 30px;
+                    color: white;
+                    background: black"><a href="nike.html" style="
+               color: white;" >Get It First</a></button>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div style="font-size: 22px; padding-left: 5%; margin-top: 100px; margin-bottom: 20px;">
+            <b>Trending</b>
+        </div>
+        <div>
+            <!-- <div .container {
+                position: relative;
+                text-align: center;
+                color: white;
+              }> -->
+              <div style="position: relative;  color: aliceblue;">
+                <img src="image3.jpg" alt="Snow" style="width:100%;">
+                <div class="bottom-left">
+                    <div>
+                        <b><p>Serena Williams Design Crew Collection</p></b>
+                    </div>
+                    <div style=" font-size:xxx-large; font-family: fantasy;">
+                        <p>MAKE A STATEMENT</p>
+                    </div>
+                    <div>
+                        <p>The Fsll 2023 SWDC continues the vision of the future of Design, produced by a diverse team of creatives and inspired by Serena herself</p>
+                    </div>
+                    <div>
+                        <button type="button"style="  padding: 8px 27px 9px 26px;
+                        border-radius: 30px;
+                        color: black;
+                        background: white"><a href="nike.html" style="
+               color: black;" >Shop Now</a></button>
+                     </div>
+
+                </div>
+                
+              </div>
+        </div>
+        <!-- <div class="container">
+            <div class="card" style="width: 400px;">
+                <img class="card-img-top" src="image2.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <!-- <h4 class="card-title">Vaishnavi Jadhav</h4> -->
+                    <!-- <p class="card-text">Available on the Nike App from: 28 Sep</p>
+                    <p class="card-text">LeBron XXI</p> -->
+                    <!-- <a href="#" class="btn btn-info">See Profile</a> -->
+                    <!-- <button type="button" onclick="alert('Nike shopping website')">Get It First</button>
+                </div>
+            </div>
+            <div class="container1">
+            <div class="card" style="width: 400px; ">
+                <img class="card-img-top" src="image1.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">Vaishnavi Jadhav</h4>
+                    <p class="card-text">Available on the Nike App from: 27 Sep</p>
+                    <p class="card-text">Nike Calm Mule</p>
+                    <!-- <a href="#" class="btn btn-info">See Profile</a> -->
+                    <!-- <button type="button" onclick="alert('Nike shopping website')">Get It First</button>
+                </div>
+            </div> -->
+        </div>
+        <div  style="font-size: 22px; padding-left: 5%; margin-top: 100px; margin-bottom: 20px; ">
+            <b>Featured</b>
+        </div>
+
+        <div class="secondflex">
+        <div style="position: relative;  color: black;">
+            <img src="image5.jpg" alt="Snow" style="width:50%; height: 100%;">
+            <div class="bottom-left1">
+                <div>
+                    <b><p>Easy Everyday Essentials</p></b>
+                </div>
+                <div>
+                    <button type="button" style="  padding: 8px 27px 9px 26px;
+                    border-radius: 30px;
+                    color: white;
+                    background: black"><a href="nike.html" style="
+               color: white;" >Shop Cortez</a></button>
+                 </div>
+
+            </div>
+            
+          </div>
+          <div style="position: relative;  color: black;">
+            <img src="image4.jpeg" alt="Snow" style="width:50%;">
+            <div class="bottom-left2" style="color: white;">
+                <div>
+                    <p>Nike Yoga</p>
+                    <b><p>Comfort Made for the Mat</p></b>
+                </div>
+                <div>
+                    <button type="button"  style="  padding: 8px 27px 9px 26px;
+                    border-radius: 30px;
+                    /* color: black; */
+                    background: white"><a href="nike.html" style="
+               color: black;" >Shop Now</a></button>
+                 </div>
+
+            </div>
+            
+          </div>
+        </div>
+
+        <div>
+            <div style="font-size: 22px; padding-left: 5%; margin-top: 100px; margin-bottom: 20px;">
+                <b><p>New Arrivals</p></b>
+                <!-- <p>Shop  < > </p> -->
+        </div>
+            <div class="container">
+                <div class="card" style="width: 350px;">
+                    <img class="card-img-top" src="image6.jpg" alt="card image" style="width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-title">Nike Air Max Pulse        $13 995</h4>
+                        <p class="card-text">Men's Shoes</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 350px;">
+                    <img class="card-img-top" src="image7.jpg" alt="card image" style="width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-title">Nike Air Max 90       $9 995</h4>
+                        <p class="card-text">Men's Shoes</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 350px;">
+                    <img class="card-img-top" src="image8.jpg" alt="card image" style="width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-title">Nike Air Force 1'07      $9 695</h4>
+                        <p class="card-text">Women's Shoes</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div style="font-size: 22px; padding-left: 5%; margin-top: 100px; margin-bottom: 20px;">
+            <b><p>Jordan Basketball</p></b>
+        </div>
+        <div style="margin:70px 10px 20x 9px; padding: 10px 23px 20px 38px;"  >
+            <img src="image9.jpg" alt="jorden" height="900px" width="1200px">
+        </div>
+        <br><br>
+        <div>
+            <div style="text-align: center; ">
+              
+               
+                <div style=" font-size:xxx-large; font-family: fantasy;">
+                    <b>DIR-FIT ADV SPORT TOP</b>
+                </div>
+                <div style="font-size: 100%;">
+                    <p>A Shirt that wont get in the way of your game , the jorden Dri-fit ADV sports Top feature of lightweight sweat winking material to help you stay dry no matter how hard to go </p>
+                    
+                </div>
+                <br>
+                <div>
+                   <button type="button"  style="  padding: 8px 27px 9px 26px;
+                   border-radius: 30px;
+                   color: white;
+                   background: black"><a href="nike.html" style="
+               color: white;" >Shop</a></button>
+                </div>
+        
+            </div>
+        </div>
+        <div  style="font-size: 22px; padding-left: 5%; margin-top: 100px; margin-bottom: 20px;">
+            <b><p>Featured</p></b>
+        </div>
+
+        <!-- <div class="thirdflex">
+        <div style="position: relative;  color: black;">
+            <img src="image10.jpg" alt="Snow" style="width:30%; height: 100%;">
+            <div class="bottom-left1">
+               
+                <div>
+                    <button type="button" onclick="alert('Nike shopping website')">Men's</button>
+                 </div>
+
+            </div>
+            
+          </div>
+          <div style="position: relative;  color: black;">
+            <img src="image11.jpg" alt="Snow" style="width:30%;">
+            <div class="bottom-left2" style="color: white;">
+              
+                <div>
+                    <button type="button" onclick="alert('Nike shopping website')">Women's</button>
+                 </div>
+
+            </div>
+            
+          </div>
+          <div style="position: relative;  color: black;">
+            <img src="image12.jpg" alt="Snow" style="width:50%;">
+            <div class="bottom-left2" style="color: white;">
+                
+                <div>
+                    <button type="button" onclick="alert('Nike shopping website')">Kid's</button>
+                 </div>
+
+            </div>
+            
+          </div>
+        </div> -->
+        <div class="container">
+            <div class="card" style="width: 350px;">
+                <img class="card-img-top" src="image10.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <div style="align-items: center;">
+                        <button type="button"   style="  padding: 8px 27px 9px 26px;
+                        border-radius: 30px;
+                        color: white;
+                        background: black;
+                        align-items: center;"><a href="nike.html" style="
+               color: white;" >Shop</a></button>
+                     </div>
+                </div>
+            </div>
+            <div class="card" style="width: 350px;">
+                <img class="card-img-top" src="image11.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <div style=" align-items: center;">
+                        <button type="button"  style="  padding: 8px 27px 9px 26px;
+                        border-radius: 30px;
+                        color: white;
+                        background: black;
+                        align-items: center;"><a href="nike.html" style="
+               color: white;" >Shop</a></button>
+                     </div>
+                </div>
+            </div>
+            <div class="card" style="width: 350px;">
+                <img class="card-img-top" src="image12.jpg" alt="card image" style="width: 100%;">
+                <div class="card-body">
+                    <div style="align-items: center;">
+                        <button type="button"  style="  padding: 8px 27px 9px 26px;
+                        border-radius: 30px;
+                        color: white;
+                        background: black;
+                       "><a href="nike.html" style="
+               color: white;" >Shop</a></button>
+                     </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
